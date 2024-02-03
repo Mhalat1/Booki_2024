@@ -233,13 +233,12 @@
     justify-content: space-between;
     justify-content: center; 
   }
-  #note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9 {
+  .note {
     font-size: 32px;
     color: #0065fc;
     font-weight: bolder;
-}
-#note02{
-  font-size: 60px;
+    padding-left: 35px;
+  }
 }
   /* Par défaut, une étoile est en gris*/
   .fa-star {
@@ -309,7 +308,7 @@
   }
   .gauche h3 {
     font-size: 34px;
-    margin: 20px 0px 0px 0px;
+    margin: 20px 0px 20px 0px;
     padding-left: 35px;
     font-weight: normal;
   
@@ -482,4 +481,4 @@
   a {
     text-decoration: none;
     color: black;
-  }}
+  }
