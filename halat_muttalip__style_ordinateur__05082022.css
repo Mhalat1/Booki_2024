@@ -224,9 +224,12 @@
     justify-content: space-between;
     margin:47px;
   }
-  #note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9 {
-    font-size: 11px;
+  .note {
     color:#0065fc;
+    font-size: 14px;
+    margin: 0px 0px 10px 15px;
+    font-weight: normal;
+    margin-top: 10px;
   }
 
 
@@ -241,9 +244,9 @@
 	color: #5474df;
 }
 
-	/* Le groupe '.stars' positionne les étoiles
+	/* Le groupe '.note' positionne les étoiles
 		 les unes à côté des autres sans espacements. */
-	.stars {
+	.note {
 		display: inline-flex;
 		justify-content: center;
 		font-size: 12px;
@@ -251,13 +254,13 @@
 
 	/* A l'état :hover sur le parent '.rating',
 		 on force TOUTES les étoiles à passer en jaune. */
-	.stars:hover .fa-star {
+     .note:hover .fa-star {
 		color: #5474df
 	}
 	/* Et si la souris survole une étoile en particulier,
 		 on sélectionne toutes les étoiles qui sont APRÈS celle-ci
 		 grâce à l'opérateur '~' et on les force en GRIS */
-	.stars .fa-star:hover ~ .fa-star {
+	.note .fa-star:hover ~ .fa-star {
 		color: gray;
 	}
 
